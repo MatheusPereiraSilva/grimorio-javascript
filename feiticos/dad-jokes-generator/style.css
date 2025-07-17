@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+  min-height: 100vh;
+  font-family: monospace;
+}
+.container{
+  text-align: center;
+  background-color: rgba(255,255,255, .3);
+  padding: 20px;
+  box-shadow: 0 6px 10px rgba(0,0,0, .3);
+  border-radius: 50px;
+  width: 85%;
+  color: darkgreen;
+}
+.heading{
+  font-size: 2.5rem;
+  font-weight: 200;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 5px 5px 2px rgba(0,0,0, .3);
+  letter-spacing: 2px;
+}
+.joke{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 40px;
+}
+.btn{
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  background-color: rgba(255,255,255, .3);
+  border-color: rgba(255,255,255, .6);
+  color: darkgreen;
+  width: 300px;
+  transition: .3s;
+}
+.btn:hover{
+  background-color: rgba(255,255,255, .5);
+  box-shadow: 0 4px 4px rgba(0,0,0, .3);
+}
+.btn:disabled{
+  opacity: .5;
+}
