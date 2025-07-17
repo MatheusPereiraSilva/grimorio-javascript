@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move-Cat</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+      }
+      h1{
+        margin-bottom: 50px;
+        margin-top: 50px;
+        font-size: 40px; 
+      }
+      .cat {
+        width: 400px;
+        height: 200px;
+        background-image: url(./walking_sprite.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        animation: walking 1s steps(12) infinite;
+      }
+      @keyframes walking {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 -2390px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Walking Cat</h1>
+    <div class="cat"></div>
+  </body>
+</html>
