@@ -7,7 +7,7 @@
 > *"Domine a arte da manipulação da realidade digital através desta poderosa runa."*
 
 ## 🧪 **Poções Mágicas (Projetos Principais)**
-- [Encantamento de Interface](./feiticos/encantamento-ui) - Criação de UIs dinâmicas
+- [Feitiços]([./feiticos/encantamento-ui](https://github.com/MatheusPereiraSilva/grimorio-javascript/tree/main/feiticos)) - Projetos Utilizando JavaScript
 - [Pergaminho de Validação](./feiticos/pergaminho-validacao) - Feitiços de validação
 - [Orbe de Animação](./feiticos/orbe-animacao) - Ilusões e transições
 
