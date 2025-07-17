@@ -8,13 +8,7 @@
 
 ## 🧪 **Poções Mágicas (Projetos Principais)**
 - [Feitiços](feiticos) - Projetos Utilizando JavaScript
-- [Pergaminho de Validação](./feiticos/pergaminho-validacao) - Feitiços de validação
-- [Orbe de Animação](./feiticos/orbe-animacao) - Ilusões e transições
 
-## 📚 **Tomo de Conhecimento**
-- [Runas Fundamentais](./grimorio/runas.md) - Sintaxe básica e conceitos
-- [Feitiços ES6+](./grimorio/feiticos-es6.md) - Modernas técnicas arcanas
-- [Poções API](./grimorio/pocoes-api.md) - Comunicação com reinos distantes
 
 ## 🧙‍♂️ **Invocando seu Primeiro Feitiço**
 
