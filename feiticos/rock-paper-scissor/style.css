@@ -1,0 +1,47 @@
+body{
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0px;
+  font-family: cursive;
+}
+.container{
+  text-align: center;
+}
+h1{
+  font-size: 3rem;
+  padding-top: 100px;
+}
+p{
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+button{
+  border: none;
+  font-size: 3rem;
+  margin: 0 .5rem;
+  padding: .5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
+button:hover{
+  opacity: .5;
+}
+#rock{
+  background-color: #ff0000;
+}
+#paper{
+  background-color: #2196f3;
+}
+#scissors{
+  background-color: #4caf50;
+}
+#user-score{
+  color: #2196f3;
+}
+#computer-score{
+  color: #ff0000;
+}
+#scores{
+  font-weight: 700;
+}
