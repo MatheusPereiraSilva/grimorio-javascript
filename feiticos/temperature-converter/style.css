@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left bottom, lightblue, lightgreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: rgb(29, 139, 139);
+}
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.convertor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.input {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}

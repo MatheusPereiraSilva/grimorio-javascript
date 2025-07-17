@@ -1,0 +1,37 @@
+{
+  "tasks": [
+    {
+      "title": "Primeira Tarefa",
+      "completed": false,
+      "createdAt": "",
+      "updatedAt": "",
+      "userId": 1
+    },
+    {
+      "title": "Segunda Tarefa",
+      "completed": false,
+      "createdAt": "",
+      "updatedAt": "",
+      "userId": 1
+    },
+    {
+      "title": "Segunda Tarefa",
+      "completed": false,
+      "createdAt": "",
+      "updatedAt": "",
+      "userId": 2
+    },
+    {
+      "title": "Terceira Tarefa",
+      "completed": false,
+      "createdAt": "",
+      "updatedAt": "",
+      "userId": 2
+    }
+  ],
+  "users": [
+    { "id": 1, "email": "matheus@server.com" },
+    { "id": 2, "email": "maria@server.com" },
+    { "id": 1, "email": "joao@server.com" }
+  ]
+}
