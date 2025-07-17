@@ -1,0 +1,12 @@
+.container > ul{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  transition: .5s;
+}
+
+a:hover{
+  color: #999;
+}
