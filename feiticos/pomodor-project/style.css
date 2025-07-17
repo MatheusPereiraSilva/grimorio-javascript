@@ -1,0 +1,39 @@
+.container{
+  text-align: center;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 400px;
+  font-family:'Roboto', sans-serif;
+}
+.title{
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+.timer{
+  color: #2c3e50;
+  font-size: 72px;
+}
+button{
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s;
+}
+button:hover{
+  opacity: .7;
+}
+#start{
+  background-color: #27ae60;
+}
+#stop{
+  background-color: #c0392b;
+}
+#reset{
+  background-color: #7f8c8d;
+}

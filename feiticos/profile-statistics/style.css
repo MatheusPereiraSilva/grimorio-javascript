@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+  text-align: center;
+  background-color: #e6d756;
+  flex-basis: 1;
+  flex-wrap: wrap;
+}
+.container{
+  padding: 20px;
+  border: 2px dotted #868282;
+  min-width: 200px;
+  height: 100px;
+  position: relative;
+}
+.icon{
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.counter{
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  transform: translateX(-50%);
+  color: #008000;
+}
+h4{
+  font-size: 20px;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
