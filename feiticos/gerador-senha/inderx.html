@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1 class="title">Gerador de senha e Nick Name</h1>
+        <p class="subtitle">
+          Utilize o nosso gerador online para criar um Nick Name e uma senha
+          forte e segura, este gerador permite gerar aproximadamente
+          7.893.454.400 Nick Names diferentes e você também pode gerar
+          aproximadamente 9.380.763.183.615.000.000 senhas diferentes com o nosso
+          gerador.
+        </p>
+      </section>
+      <h2 class="ide">Escolha o seu Nick</h2>
+
+      <section class="box">
+        <div class="name">
+          <div class="text">
+            <input type="text" name="nick" id="nick" />
+          </div>
+          <div class="action1">
+            <button class="copyUm">
+              <img
+                class="img"
+                src="copyicon.png"
+                alt="icone de copiar"
+                width="42"
+              />
+            </button>
+            <button class="renew" id="renew2">
+              <img
+                class="img gerar"
+                src="renewicon.png"
+                alt="icone de gerar nova senha"
+                width="42"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="security">
+          <div id="security-bar" class="bar" style="width: 90%"></div>
+        </div>
+      </section>
+      <section class="box customize">
+        <h3 class="title">Personalizar</h3>
+        <div class="actions">
+          <div class="nick-length">
+            <p>Tamanho: <span id="nick-length-text">6</span></p>
+            <input
+              type="range"
+              name="nick-length"
+              id="nick-length"
+              class="slider"
+              value="6"
+              min="4"
+              max="8"
+            />
+          </div>
+        </div>
+      </section>
+      <div class="submit">
+        <button id="nn">Copiar Nick</button>
+      </div>
+      <h2 class="ide">Escolha a sua Senha</h2>
+      <section class="box2">
+        <div class="password">
+          <div class="text2">
+            <input type="text" name="password" id="password" />
+          </div>
+          <div class="action">
+            <button class="copy">
+              <img
+                class="img"
+                src="copyicon.png"
+                alt="icone de copiar"
+                width="42"
+              />
+            </button>
+            <button class="renew" id="renew1">
+              <img
+                class="img gerar"
+                src="renewicon.png"
+                alt="icone de gerar nova senha"
+                width="42"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="security">
+          <div id="security-bar-password" class="bar"></div>
+        </div>
+      </section>
+      <section class="box customize">
+        <h3 class="title">Personalizar</h3>
+        <div class="actions">
+          <div class="password-length">
+            <p>Tamanho: <span id="password-length-text">16</span></p>
+            <input
+              type="range"
+              name="password-length"
+              id="password-length"
+              class="slider"
+              value="16"
+              min="4"
+              max="24"
+            />
+          </div>
+          <div class="config">
+            <label class="checkbox-container">
+              <span class="text">Maiúsculas</span>
+              <input type="checkbox" id="uppercase-check" checked />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              <span class="text">Números</span>
+              <input type="checkbox" id="numbers-check" checked />
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">
+              <span class="text">Símbolos</span>
+              <input type="checkbox" id="symbol-check" checked />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </section>
+      <div class="submit">
+        <button id="senha">Copiar Senha</button>
+      </div>
+    </main>
+
+    <script>
+      let passwordLength = 16;
+      let nickLength = 6;
+      const nameEl = document.querySelector("#nick");
+      const inputEl = document.querySelector("#password");
+      const upperCaseCheckEl = document.querySelector("#uppercase-check");
+      const numberCheckEl = document.querySelector("#numbers-check");
+      const symbolCheckEl = document.querySelector("#symbol-check");
+      const securityBarPasswordEl = document.querySelector(
+        "#security-bar-password"
+      );
+      function ganerateNick() {
+        const name = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ";
+
+        let nickName = "";
+        for (let i = 0; i < nickLength; i++) {
+          const randomName = Math.floor(Math.random() * name.length);
+
+          nickName += name.substring(randomName, randomName + 1);
+
+          nameEl.value = nickName;
+
+          console.log(nickName);
+        }
+      }
+
+      function generatePassword() {
+        let chars = "abcdefghjkmnpqrstuvwxyz";
+
+        const upperCaseChars = "ABCDEFGHJKLMNPQRSTUVWXYZ";
+        const numberChars = "123456789";
+        const symbolChars = "?!@&()*[]";
+
+        if (upperCaseCheckEl.checked) {
+          chars += upperCaseChars;
+        }
+
+        if (numberCheckEl.checked) {
+          chars += numberChars;
+        }
+
+        if (symbolCheckEl.checked) {
+          chars += symbolChars;
+        }
+
+        let password = "";
+
+        for (let i = 0; i < passwordLength; i++) {
+          const randomNumber = Math.floor(Math.random() * chars.length);
+          password += chars.substring(randomNumber, randomNumber + 1);
+        }
+
+        inputEl.value = password;
+        calculateQuality();
+        calculateFontSize()
+        
+      }
+
+      function calculateQuality() {
+        const percent = Math.round(
+          (passwordLength / 24) * 20 +
+            (upperCaseCheckEl.checked ? 15 : 0) +
+            (numberCheckEl.checked ? 25 : 0) +
+            (symbolCheckEl.checked ? 40 : 0)
+        );
+        securityBarPasswordEl.style.width = `${percent}%`;
+
+        if (percent > 69) {
+          securityBarPasswordEl.classList.remove("critical");
+          securityBarPasswordEl.classList.remove("warning");
+          securityBarPasswordEl.classList.add("safe");
+        } else if (percent > 50) {
+          securityBarPasswordEl.classList.remove("critical");
+          securityBarPasswordEl.classList.add("warning");
+          securityBarPasswordEl.classList.remove("safe");
+        } else {
+          securityBarPasswordEl.classList.add("critical");
+          securityBarPasswordEl.classList.remove("warning");
+          securityBarPasswordEl.classList.remove("safe");
+        }
+
+        if (percent >= 100) {
+          securityBarPasswordEl.classList.add("completed");
+        } else {
+          securityBarPasswordEl.classList.remove("completed");
+        }
+      }
+      function calculateFontSize() {
+        if (passwordLength > 45) {
+          inputEl.classList.remove("font-sm")
+          inputEl.classList.remove("font-xs")
+          inputEl.classList.add("font-xxs")
+        } else if (passwordLength > 32) {
+          inputEl.classList.remove("font-sm")
+          inputEl.classList.add("font-xs")
+          inputEl.classList.remove("font-xxs")
+        } else if (passwordLength > 22) {
+          inputEl.classList.add("font-sm")
+          inputEl.classList.remove("font-xs")
+          inputEl.classList.remove("font-xxs")
+        } else {
+          inputEl.classList.remove("font-sm")
+          inputEl.classList.remove("font-xs")
+          inputEl.classList.remove("font-xxs")
+        }
+      }
+
+      
+
+      function copyN() {
+        navigator.clipboard.writeText(nameEl.value);
+      }
+
+      function copyP() {
+        navigator.clipboard.writeText(inputEl.value);
+      }
+
+      const nicklengthEl = document.querySelector("#nick-length");
+      nicklengthEl.addEventListener("input", function () {
+        nickLength = nicklengthEl.value;
+        document.querySelector("#nick-length-text").innerText = nickLength;
+        ganerateNick();
+      });
+
+      const passwordlengthEl = document.querySelector("#password-length");
+      passwordlengthEl.addEventListener("input", function () {
+        passwordLength = passwordlengthEl.value;
+        document.querySelector("#password-length-text").innerText =
+          passwordLength;
+        generatePassword();
+      });
+
+      upperCaseCheckEl.addEventListener("click", generatePassword);
+      numberCheckEl.addEventListener("click", generatePassword);
+      symbolCheckEl.addEventListener("click", generatePassword);
+      const copyName = document.querySelector("#nn");
+      copyName.addEventListener("click", copyN);
+
+      const copyNameUm = document.querySelector(".copyUm");
+      copyNameUm.addEventListener("click", copyN);
+
+      const copySenha = document.querySelector("#senha");
+      copySenha.addEventListener("click", copyP);
+
+      const copyNameDois = document.querySelector(".copy");
+      copyNameDois.addEventListener("click", copyP);
+
+      document.querySelector("#renew2").addEventListener("click", ganerateNick);
+      document.querySelector("#renew1").addEventListener("click", generatePassword)
+
+      generatePassword();
+      ganerateNick();
+    </script>
+  </body>
+</html>
