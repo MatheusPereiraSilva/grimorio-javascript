@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaTest</title>
+    <script>
+      var numero = 10;
+      var interval;
+      function atualizarTexto() {
+        let h = document.getElementsByTagName("h1")[0];
+        h.innerHTML += " " + numero;
+        numero--;
+      }
+
+      function mudarTexto() {
+        //setTimeout(mudarCor, 1000);
+
+        interval = setInterval(atualizarTexto, 1000);
+      }
+      function parar() {
+        clearInterval(interval);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Contagem Regressiva para o Reset Universal, by: Grimley</h1>
+    <input onclick="mudarTexto()" type="submit" value="começar" />
+    <input onclick="parar()" type="submit" value="Parar" />
+  </body>
+</html>
