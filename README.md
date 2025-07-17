@@ -30,8 +30,3 @@ grimorio.saudar("Aprendiz");
 2. Use [Visual Studio Code](https://code.visualstudio.com/) como seu caldeirão
 3. Explore os [Componentes React](./laboratorio/componentes) para UI poderosa
 
-<div align="center">
-  <a href="https://github.com/DevMP/grimorio-javascript/issues">
-    <img src="https://img.shields.io/badge/📜-Sugerir_Feitiço-purple?style=for-the-badge" alt="Contribuir">
-  </a>
-</div>
