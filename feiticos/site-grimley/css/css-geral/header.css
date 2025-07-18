@@ -1,0 +1,114 @@
+.header-bg {
+    background-image: url(../../images/fundo-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header-login {
+    display: none;
+    color: white;
+    gap: 10px;
+    justify-self: flex-end;
+    cursor: pointer;
+    align-self: flex-end;
+    padding-bottom: 5px;
+    height: 30px;
+}
+
+/* .header-login-items {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    right: -400px;
+} */
+
+.header-menu {
+    background-color: #230939;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header-menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.header-menu li {
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.data-menu {
+    position: relative;
+}
+
+.data-menu .menu-item {
+    display: none;
+}
+
+.data-menu:hover .menu-item, .data-menu.active .menu-item {
+    display: block;
+    animation: menuAnima .8s forwards;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 2px;
+    position: absolute;
+    z-index: 999;
+    align-items: center;
+    -webkit-box-shadow: -4px 15px 12px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 15px 12px -7px rgba(0,0,0,0.75);
+    box-shadow: -4px 15px 12px -7px rgba(0,0,0,0.75);
+}
+
+.menu-item li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-item li:not(:last-child) {
+    border-bottom: 2px solid #230939;
+}
+
+.menu-item li:first-child {
+    margin-top: 5px;
+}
+
+.menu-item li a {
+    text-decoration: none;
+    color: #44154B;
+    font-weight: bold;
+}
+
+.menu-item li:hover {
+    background-color: #44154B;
+    transition: .3s;
+}
+
+.menu-item li a:hover {
+    color: #fff;
+    transition: .3s;
+}
+
+@keyframes menuAnima {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}

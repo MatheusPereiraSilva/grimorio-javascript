@@ -1,0 +1,149 @@
+.sobre {
+    background-image: url(../../images/fundo-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-bg {
+    padding-top: 50px;
+    max-width: 900px;
+    display: flex;
+    margin-left: 150px;
+}
+
+.sobre-menu {
+    display: flex;
+    margin-right: 2px;
+    color: #230939;
+    font-weight: bold;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    font-size: 20px;
+    gap: 2px;
+    z-index: 3;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.sobre-menu img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.cor-secundaria {
+    background-color: #919191;
+}
+
+.sobre-info {
+    display: none;
+}
+.sobre-info.info-ativo {
+    background-color: white;
+    margin-left: 100px;
+    max-width: 1300px;
+    padding: 50px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    animation: animaTab 1.5s forwards;
+}
+
+@keyframes animaTab {
+    from{
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.sobre-info h1 {
+    font-size: 35px;
+    position: absolute;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.sobre-info h1::before {
+    content: url(../../images/detalhe.svg);
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 25px;
+}
+
+.sobre-info p {
+    max-width: 680px;
+    margin-top: 40px;
+    margin-left: 90px;
+    font-weight: 600;
+}
+
+.sobre-info h2 {
+    margin-left: 90px;
+    margin-top: 30px;
+    grid-column: 1;
+}
+
+.sobre-info2 {
+    background-color: #D9D9D9;
+    padding: 20px;
+    margin-left: 90px;
+    margin-top: 10px;
+    max-width: 650px;
+    display: grid;
+    grid-template-columns: 140px 1fr 1fr;
+    grid-column: 1;
+}
+
+.sobre-info2 img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    grid-row: 1 / 4;
+}
+
+.sobre-info2 h2 {
+    grid-column: 2 / 4;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sobre-info2 p {
+    grid-column: 2 / 4;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.sobre-info2 a {
+    text-decoration: none;
+    color: white;
+    background-color: #230939;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sobre-info2 a:last-child {
+    margin-left: 10px;
+}
+
+.aside {
+    grid-column: 2;
+    grid-row: 1/4;
+    background-color: #D9D9D9;
+    height: 390px;
+    max-width: 415px;
+    margin-left: 10px;
+}

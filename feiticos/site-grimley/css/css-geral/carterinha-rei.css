@@ -1,0 +1,87 @@
+.cateirinha-rei {
+    background-image: url(../../images/fundo-carteira.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin-top: -30px;
+    color: white;
+}
+
+.cateirinha-rei h2 {
+    font-size: 43px;
+    margin-left: 130px;
+    font-style: italic;
+}
+
+.cateirinha-rei h3 {
+    margin-left: 130px;
+    margin-top: 5px;
+    font-size: 21px;
+    font-style: italic;
+}
+
+.form-rei {
+    margin-top: 20px;
+    display: flex;
+    max-width: 1300px;
+    margin-left: 130px;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    
+}
+
+small {
+    font-size: 10px;
+}
+
+.nome, .terra  {
+    max-width: 40%;
+}
+
+.nome {
+    width: 450px;
+}
+
+#nome {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.tipo-terra {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.cateirinha-rei button {
+    font-size: 17px;
+    color: #44154B;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    height: 39px;
+    cursor: pointer;
+}
+
+.cateirinha-rei button:hover {
+    color: white;
+    background-color: #44154B;
+    transition: .3s;
+}

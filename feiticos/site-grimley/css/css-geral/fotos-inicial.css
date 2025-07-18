@@ -1,0 +1,11 @@
+.fotos {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.foto-img img {
+    width: 243px;
+    height: 345px;
+}

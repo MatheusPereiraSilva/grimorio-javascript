@@ -1,0 +1,261 @@
+.bg2 {
+    height: 300px;
+    margin-bottom: -8px;
+    
+}
+
+.sobre-bg {
+    max-width: 100%;
+    display: flex;
+    justify-self: center;
+}
+  
+.grimley-bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+  
+.grimley-bg img {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.grimley-bg h1 {
+    position: absolute;
+    top: 30px;
+    right: 20%; /* Ajuste a posição esquerda desejada */
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.perfil-resumo {
+    z-index: 222;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    position: absolute;
+    top: 385px;
+    gap: 20px;
+    margin-bottom: 30px;
+    max-width: 80%;
+}
+
+.perfil-resumo img {
+    grid-column: 1;
+    max-width: 400px;
+    
+}
+
+.kai-perfil {
+    height: 400px;
+}
+
+.subtitulo {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.subtitulo h4 {
+    margin-top: 15px;
+}
+
+.subtitulo p {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.perfil-dois-bg img {
+    margin-left: 5%;
+    max-width: 90%;
+}
+
+.perfil-base {
+    position: absolute;
+    left: 50%;
+    top: 900px;
+    transform: translateX(-50%);
+    width: 80%;
+    background: #fff;
+}
+
+.perfil-informacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+}
+
+.perfil-nomes {
+    grid-template-columns: 1 / 3;
+    display: grid;
+    grid-template-columns: 200px 2fr 1fr;
+}
+
+.perfil-nomes img {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+
+.perfil-informacoes-principais {
+    padding: 20px;
+    text-align: left; /* Alinhe o texto à esquerda */
+}
+
+.perfil-informacoes-principais h1, .perfil-informacoes-principais h3 {
+    margin-bottom: 5px;
+    /* text-align: left; */
+}
+
+/* .perfil-informacoes-principais h3 {
+    margin-left: -450px;
+} */
+
+.perfil-informacoes-principais h6 {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.ifrit {
+    width: 250px;
+    /* grid-template-columns: 3; */
+    background: #D9D9D9;
+    margin-right: 30px;
+    
+}
+
+.ifrit img {
+    max-width: 350px;
+    padding: 20px;
+    margin-top: -100px;
+}
+
+.ifrit h1 {
+    text-align: center;
+    margin-top: -20px;
+}
+
+.ifrit p {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ifrit h2 {
+    font-size: 15px;
+    padding: 5px;
+    color: #fff;
+    background: #230939;
+    margin-top: -20px;
+    grid-column: 3;
+    text-align: center;
+    /* margin-right: 15px; */
+    /* margin-left: -15px; */
+}
+
+.ifrit h3 {
+    text-align: center;
+    padding: 2px;
+    background: #fff;
+}
+
+/* .perfil-nomes h3 {
+    grid-column: 3;
+    text-align: center;
+} */
+
+.informacoes-terra {
+    display: flex;
+    margin-top: -90px;
+    gap: 40px;
+    margin-left: 50px;
+}
+
+.terra-natal {
+    background: #D9D9D9;
+    padding: 10px 30px;
+}
+
+.terra-natal h1 {
+    position: relative;
+}
+
+.terra-natal h1::before {
+    content: '';
+    background: url(../../images/detalhe1.svg);
+    position: absolute;
+    z-index: 999;
+    width: 52px;
+    height: 25px;
+    background-repeat: no-repeat;
+    top: 10px;
+    left: -25px;
+}
+
+.terra-natal h3 {
+    font-weight: normal;
+}
+
+.terra-atual {
+    background: #230939;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+.terra-atual h1 {
+    position: relative;
+}
+
+.terra-atual h1::before {
+    content: '';
+    background: url(../../images/deralhe2.svg);
+    position: absolute;
+    z-index: 999;
+    width: 52px;
+    height: 25px;
+    background-repeat: no-repeat;
+    top: 10px;
+    left: -25px;
+}
+
+.terra-atual h3 {
+    font-weight: normal;
+}
+
+.estrela {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0px 50px 50px;
+}
+
+.historia {
+    max-width: 700px;
+    /* margin: 100px auto; */
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.historia p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.imagens-foto {
+    display: flex;
+    max-width: 100vw;
+    margin-top: 1050px;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.imagens-foto img {
+    max-width: 400px;
+
+}

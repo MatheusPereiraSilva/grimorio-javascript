@@ -1,0 +1,71 @@
+.live-g {
+    background: #230939;
+    color: #fff;
+}
+
+.live-a {
+    background: #350505;
+    color: #fff;
+}
+
+.logo-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.logo-menu ul li {
+    position: relative; /* Adicione esta linha */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Estilo para os submenus */
+.logo-menu ul li ul {
+    position: absolute; /* Defina como absolute */
+    top: 100%; /* Ajuste a posição vertical para abaixo do item de menu */
+    left: 0; /* Ajuste a posição horizontal, se necessário */
+    display: none; /* Oculte inicialmente os submenus */
+    background: #fff; /* Adicione estilos de fundo, cores, etc. */
+    /* Adicione outros estilos desejados para os submenus */
+}
+
+/* Estilo para mostrar os submenus quando o item de menu é hover */
+.logo-menu ul li:hover ul {
+    display: block; /* Mostrar os submenus quando o item de menu é hover */
+}
+
+.main {
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.video img {
+    max-width: 900px;
+    align-self: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.comentarios img {
+    max-width: 400px;
+    grid-template-rows: 1 / 2;
+}
+
+.participantes {
+    text-align: center;
+}

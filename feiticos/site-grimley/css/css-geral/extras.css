@@ -1,0 +1,16 @@
+.extras {
+    max-width: 1300px;
+    margin-left: 130px;
+    margin-top: 50px;
+    background-color: #230939;
+    color: white;
+    padding: 20px;
+}
+
+.extras h1 {
+    margin-bottom: 20px;
+}
+
+.extras p {
+    margin-bottom: 10px;
+}
