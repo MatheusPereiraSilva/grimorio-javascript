@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Palavras</title>
+  <script>
+    function calcularTempo() {
+      var palavras = document.getElementById("palavras").value;
+      var palavrasPorMinuto = document.getElementById("palavrasPorMinuto").value;
+      
+      var minutos = Math.ceil(palavras / palavrasPorMinuto);
+      
+      document.getElementById("resultado").innerHTML = "Tempo estimado: " + minutos + " minutos.";
+    }
+  </script>
+</head>
+<body>
+<div>
+  <h1>Calculadora de Palavras</h1>
+  
+  <label for="palavras">Número de palavras no roteiro:</label>
+  <input type="number" id="palavras">
+  
+  <br>
+  
+  <label for="palavrasPorMinuto">Palavras por minuto:</label>
+  <input type="number" id="palavrasPorMinuto" value="150">
+  
+  <br>
+  
+  <button onclick="calcularTempo()">Calcular</button>
+  
+  <br>
+  
+  <p id="resultado"></p>
+</div>
+</body>
+</html>
